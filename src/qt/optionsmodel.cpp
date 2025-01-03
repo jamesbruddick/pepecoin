@@ -76,7 +76,7 @@ void OptionsModel::Init(bool resetSettings)
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
-        settings.setValue("strThirdPartyTxUrls", "https://pepeexplorer.com/tx/%s");
+        settings.setValue("strThirdPartyTxUrls", "https://pepeblocks.com/tx/%s");
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("fCoinControlFeatures"))
@@ -99,7 +99,7 @@ void OptionsModel::Init(bool resetSettings)
     // Convert prune size to MiB:
     const uint64_t nPruneSizeMiB = PruneGBtoMiB(settings.value("nPruneSize").toInt());
     if (!SoftSetArg("-prune", settings.value("bPrune").toBool() ? std::to_string(nPruneSizeMiB) : "0")) {
-      addOverriddenOption("-prune");
+        addOverriddenOption("-prune");
     }
 
     if (!settings.contains("nDatabaseCache"))
@@ -285,7 +285,7 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
         case HideTrayIcon:
             fHideTrayIcon = value.toBool();
             settings.setValue("fHideTrayIcon", fHideTrayIcon);
-    		Q_EMIT hideTrayIconChanged(fHideTrayIcon);
+            Q_EMIT hideTrayIconChanged(fHideTrayIcon);
             break;
         case MinimizeToTray:
             fMinimizeToTray = value.toBool();
