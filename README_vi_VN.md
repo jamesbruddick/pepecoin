@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://i.imgur.com/DDkfI9i.png" alt="Pepecoin" width="300"/>
 <br/><br/>
-Nhân Tố Pepecoin [PEPE, Ᵽ]
+Nhân Tố Pepecoin [PEP, Ᵽ]
 </h1>
 
 Chọn ngôn ngữ: [EN](./README.md)| [CN](./README_zh_CN.md) | [PT](./README_pt_BR.md) | [FA](./README_fa_IR.md) | VI | [FR](./README_fr_FR.md) | [JA](./README_ja_JP.md) | [DE](./README_de_DE.md)

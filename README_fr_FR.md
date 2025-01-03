@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://i.imgur.com/DDkfI9i.png" alt="Pepecoin" width="300"/>
 <br/><br/>
-Pepecoin Core [PEPE, Ᵽ]  
+Pepecoin Core [PEP, Ᵽ]  
 </h1>
 
 Choisir la langue : [EN](./README.md) | [CN](./README_zh_CN.md) | [PT](./README_pt_BR.md) | [FA](./README_fa_IR.md) | [VI](./README_vi_VN.md) | FR | [JA](./README_ja_JP.md) | [DE](./README_de_DE.md)
