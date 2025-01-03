@@ -24,6 +24,7 @@ jobs:
       CACHE_NONCE: "1"
       WINEDEBUG: fixme-all
       SDK_URL: https://depends.dogecoincore.org
+      BIONIC_LIEF_WHL: lief-0.12.3-cp36-cp36m-linux_x86_64.whl
 
     strategy:
       fail-fast: false
@@ -115,7 +116,12 @@ jobs:
           sudo apt-get install ${{ matrix.packages }}
           python3 -m pip install setuptools==75.6.0 --upgrade
 
-      - name: Install lief wheel
+      - name: Install custom lief wheel
+        if: matrix.os == 'ubuntu-18.04'
+        run: python3 -m pip install $SDK_URL/$BIONIC_LIEF_WHL
+
+      - name: Install standard lief wheel
+        if: matrix.os != 'ubuntu-18.04'
         run: python3 -m pip install lief
 
       - name: Post install
