@@ -1,105 +1,89 @@
 <h1 align="center">
-<img src="https://i.imgur.com/DDkfI9i.png" alt="Pepecoin" width="300"/>
-<br/><br/>
-Pepecoin Core [PEP, Ᵽ]  
+  <img src="https://i.imgur.com/DDkfI9i.png" alt="Pepecoin" width="300"/>
+  <br/><br/>
+  Pepecoin Core [PEP, Ᵽ]
 </h1>
 
-Choisir la langue : [EN](./README.md) | [CN](./README_zh_CN.md) | [PT](./README_pt_BR.md) | [FA](./README_fa_IR.md) | [VI](./README_vi_VN.md) | FR | [JA](./README_ja_JP.md) | [DE](./README_de_DE.md)
+Sélectionner la langue : [EN](./README.md) | [CN](./README_zh_CN.md) | [PT](./README_pt_BR.md) | [FA](./README_fa_IR.md) | [VI](./README_vi_VN.md) | FR | [JA](./README_ja_JP.md) | [DE](./README_de_DE.md)
 
-Contrairement à toutes les itérations précédentes, Pepecoin est une monnaie dite « layer 1 ». Cela signifie qu'il n'y a pas de pools de liquidités à drainer, pas de portefeuilles blacklistés, et pas de contrats intelligents obscurs. Le Pepecoin est une blockchain simple.
+Pepecoin est une cryptomonnaie axée sur la communauté, créée par l'un des membres originaux de Dogecoin de 2013. Elle a été créée dans un but précis : créer une nouvelle communauté amusante, tout comme la communauté Dogecoin originale.
 
-Le logiciel Pepecoin Core permet à quiconque d'opérer un nœud au sein des réseaux de la blockchain Pepecoin et utilise la méthode de hachage Scrypt pour la preuve de travail (Proof of Work). Ce logiciel est adapté du Dogecoin Core, du Bitcoin Core et d'autres crypto-monnaies.
+Contrairement à toutes les versions précédentes, Pepecoin est une pièce de couche 1. Cela signifie qu'il n'y a pas de pools de liquidité à vider, pas de portefeuilles sur liste noire et pas de contrats intelligents compliqués. Pepecoin est une blockchain simple.
 
-Pour plus d'informations sur les frais par défaut utilisés sur le réseau Pepecoin, veuillez vous référer à [recommandation de frais](doc/fee-recommendation.md).
+Le logiciel Pepecoin Core permet à quiconque d'exploiter un nœud sur les réseaux blockchain de Pepecoin et utilise la méthode de hachage Scrypt pour la preuve de travail (PoW). Il est adapté de Dogecoin Core, Bitcoin Core et d'autres cryptomonnaies.
 
-**Site web:** [pepecoin.org](https://pepecoin.org)
+Pour plus d'informations sur les frais par défaut utilisés sur le réseau Pepecoin, veuillez consulter la [recommandation de frais](doc/fee-recommendation.md).
 
-## Différences avec le Dogecoin
+**Site Web :** [pepecoin.org](https://pepecoin.org)
 
-Pepecoin est un fork du Dogecoin, conçu pour offrir une expérience similaire et familière.
+## Différences avec Dogecoin
 
-Changements :
+Pepecoin est un fork de Dogecoin. Pour des raisons de familiarité, nous essayerons de garder Pepecoin aussi similaire que possible à Dogecoin.
+
+Modifications :
 
 * Les adresses commencent par `P` au lieu de `D`
-* Les fonctionnalités BIPS commenceront au bloc 1000
-* AuxPow commence au bloc 100 000 (ID de chaîne : 63)
-* L'interface graphique a été adaptée pour Pepecoin
+* Les fonctionnalités BIPS commenceront à partir du bloc 1000
+* AuxPow commence au bloc 42 000 (ID de chaîne : 63)
+* Interface graphique avec un thème Pepecoin
 
-## Usage 💻
+## Utilisation 💻
 
-Pour commencer votre voyage avec Pepecoin Core, consultez le [guide d'installation](INSTALL.md) et l'[introduction](doc/getting-started.md).
+Pour commencer votre aventure avec Pepecoin Core, consultez le [guide d'installation](INSTALL.md) et le tutoriel [démarrer](doc/getting-started.md).
 
-L'API JSON-RPC fournie par Pepecoin Core est auto-documentée et peut être consultée avec `pepecoin-cli help`, tandis que des informations détaillées pour chaque commande peuvent être consultées avec `pepecoin-cli help <commande>`. Vous pouvez également consulter la [documentation Bitcoin Core](https://developer.bitcoin.org/reference/rpc/) - qui met en œuvre un protocole similaire - pour obtenir une version consultable.
+L'API JSON-RPC fournie par Pepecoin Core est auto-documentée et peut être consultée avec `pepecoin-cli help`, tandis que des informations détaillées pour chaque commande peuvent être consultées avec `pepecoin-cli help <commande>`. Sinon, consultez la [documentation de Bitcoin Core](https://developer.bitcoin.org/reference/rpc/) qui implémente un protocole similaire pour obtenir une version consultable.
 
 ### Ports
 
-Pepecoin Core utilise par défaut le port `33874` pour la communication peer-to-peer 
-qui est nécessaire pour synchroniser la blockchain du « mainnet » et rester informé 
-des nouvelles transactions et des nouveaux blocs. De plus, un port JSONRPC peut être ouvert, 
-qui est par défaut le port `33873` pour les nœuds du réseau principal. 
-Il est fortement recommandé de ne pas exposer les ports RPC à l'internet public.
+Pepecoin Core utilise par défaut le port `33874` pour la communication pair-à-pair nécessaire à la synchronisation de la blockchain "mainnet" et à la mise à jour des nouvelles transactions et blocs. De plus, un port JSONRPC peut être ouvert, par défaut sur le port `33873` pour les nœuds mainnet. Il est fortement recommandé de ne pas exposer les ports RPC sur Internet public.
 
-| Fonction | mainnet | testnet | regtest |
-| :------- | ------: | ------: | ------: |
-| P2P      |   33874 |   44874 |   18444 |
-| RPC      |   33873 |   44873 |   18332 |
+| Fonction  | mainnet | testnet | regtest |
+| :-------- | ------: | ------: | ------: |
+| P2P       |   33874 |   44874 |   18444 |
+| RPC       |   33873 |   44873 |   18332 |
 
-## Développement en cours 💻
+## Développement continu 💻
 
-Pepecoin Core est un logiciel libre et communautaire. 
-Le processus de développement est ouvert et visible publiquement ; 
-tout le monde peut voir, discuter et travailler sur le logiciel
+Pepecoin Core est un logiciel open-source et piloté par la communauté. Le processus de développement est ouvert et visible publiquement ; chacun peut voir, discuter et travailler sur le logiciel.
 
 Principales ressources de développement :
 
-* [GitHub Projects](https://github.com/pepecoinppc/pepecoin/projects) est utilisé pour
-  suivre les travaux planifiés et en cours pour les prochaines versions.
-* [GitHub Discussion](https://github.com/pepecoinppc/pepecoin/discussions) est utilisé pour discuter des fonctionnalités, des projets et des projets en cours.
-  pour discuter des fonctionnalités, planifiées et non planifiées, liées à la fois au développement du
-  développement du logiciel Pepecoin Core, des protocoles sous-jacents et de l'actif PEPE.  
-* [PepecoinDev subreddit](https://www.reddit.com/r/pepecoindev/)
+* [GitHub Projects](https://github.com/pepecoinppc/pepecoin/projects) est utilisé pour suivre les travaux planifiés et en cours pour les prochaines versions.
+* [GitHub Discussions](https://github.com/pepecoinppc/pepecoin/discussions) est utilisé pour discuter des fonctionnalités, planifiées ou non, liées au développement de Pepecoin Core, des protocoles sous-jacents et de l'actif PEP.
+* [PepecoinDev subreddit](https://www.reddit.com/r/pepecoindev)
 
 ### Stratégie de version
 Les numéros de version suivent la sémantique ```major.minor.patch```.
 
 ### Branches
-Il y a 3 types de branches sur ce dépôt :
+Il existe 3 types de branches dans ce dépôt :
 
-- **master:** Stable, contient la dernière version de la dernière version *major.minor*.
-- **maintenance:** Stable, contient la dernière version des versions précédentes, qui sont toujours en maintenance active. Format : ```<version>-maint```
-- **development:** Unstable, contient le nouveau code pour les versions planifiées. Format : ``<version>-maint`` : ``<version>-dev```
+- **master :** Stable, contient la dernière version du dernier *major.minor*.
+- **maintenance :** Stable, contient la dernière version des versions précédentes encore sous maintenance active. Format : ```<version>-maint```
+- **development :** Instable, contient le nouveau code pour les versions prévues. Format : ```<version>-dev```
 
-*Les branches Master et maintenance sont exclusivement mutables par version.*
-*Les versions planifiées auront toujours une branche de développement *
-*et les pull requests doivent être soumises sur celles-ci. Les branches de maintenance sont là pour **les corrections de bugs uniquement,***
-*Veuillez soumettre les nouvelles fonctionnalités sur la branche de développement avec la version la plus élevée.*
+*Les branches master et maintenance sont uniquement modifiables par des versions de sortie. Les versions prévues auront toujours une branche de développement et les pull requests doivent y être soumises. Les branches de maintenance sont uniquement destinées aux **corrections de bugs**, veuillez soumettre de nouvelles fonctionnalités sur la branche de développement avec la version la plus élevée.*
 
 ## Contribuer 🤝
 
-Si vous trouvez un bug ou si vous rencontrez des problèmes avec ce logiciel, 
-veuillez le signaler [ici](https://github.com/pepecoinppc/pepecoin/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
+Si vous trouvez un bug ou rencontrez un problème avec ce logiciel, veuillez le signaler via le [système de tickets](https://github.com/pepecoinppc/pepecoin/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
 
-Veuillez consulter [le guide de contribution](CONTRIBUTING.md) pour savoir comment vous pouvez participer au développement de Pepecoin Core. Il y a souvent des
-[topics seeking help](https://github.com/pepecoinppc/pepecoin/labels/help%20wanted) où vos contributions auront un impact important et seront très appréciées.
+Consultez le [guide de contribution](CONTRIBUTING.md) pour savoir comment vous pouvez participer au développement de Pepecoin Core. Il existe souvent des [sujets recherchant de l'aide](https://github.com/pepecoinppc/pepecoin/labels/help%20wanted) où vos contributions auront un grand impact et seront très appréciées.
 
 ## Communautés 🐸
 
-Vous pouvez rejoindre les communautés sur différents médias sociaux pour voir ce qui se passe, 
-rencontrer des gens et discuter, trouver le dernier mème, en savoir plus sur Pepecoin, 
-donner ou demander de l'aide, partager votre projet.
+Vous pouvez rejoindre les communautés sur différents réseaux sociaux. Pour voir ce qui se passe, rencontrer des gens, discuter, trouver le dernier mème, apprendre à connaître Pepecoin, demander ou offrir de l'aide, ou partager votre projet.
 
-Voici quelques espaces à visiter :
+Voici quelques endroits à visiter :
 
-* [r/Pepecoin](https://www.reddit.com/r/pepecoin/)
+* [Reddit](https://www.reddit.com/r/pepecoin)
 * [Discord](https://pepecoin.org/discord)
 * [Telegram](https://t.me/PepecoinGroup)
 * [Twitter/X](https://twitter.com/PepecoinNetwork)
 
-## Foire aux question ❓
+## Questions fréquentes ❓
 
-Vous avez une question concernant Pepecoin ? Une réponse se trouve peut-être déjà dans la [FAQ](doc/FAQ.md) ou dans la [section Q&A](https://github.com/pepecoinppc/pepecoin/discussions/categories/q-a) du forum de discussion !
+Vous avez une question sur Pepecoin ? Une réponse se trouve peut-être déjà dans la [FAQ](doc/FAQ.md) ou dans la section [Q&A](https://github.com/pepecoinppc/pepecoin/discussions/categories/q-a) du forum de discussion !
 
 ## Licence ⚖️
-Pepecoin Core est publié sous les termes de la licence MIT. Voir
-[COPYING](COPYING) pour plus d'informations ou voir
-[opensource.org](https://opensource.org/licenses/MIT)
+Pepecoin Core est publié sous les termes de la licence MIT. Voir le fichier [COPYING](COPYING) pour plus d'informations ou consultez [opensource.org](https://opensource.org/licenses/MIT)

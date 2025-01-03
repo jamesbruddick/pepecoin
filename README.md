@@ -36,11 +36,7 @@ The JSON-RPC API provided by Pepecoin Core is self-documenting and can be browse
 
 ### Ports
 
-Pepecoin Core by default uses port `33874` for peer-to-peer communication that
-is needed to synchronize the "mainnet" blockchain and stay informed of new
-transactions and blocks. Additionally, a JSONRPC port can be opened, which
-defaults to port `33873` for mainnet nodes. It is strongly recommended to not
-expose RPC ports to the public internet.
+Pepecoin Core by default uses port `33874` for peer-to-peer communication that is needed to synchronize the "mainnet" blockchain and stay informed of new transactions and blocks. Additionally, a JSONRPC port can be opened, which defaults to port `33873` for mainnet nodes. It is strongly recommended to not expose RPC ports to the public internet.
 
 | Function | mainnet | testnet | regtest |
 | :------- | ------: | ------: | ------: |
@@ -49,18 +45,13 @@ expose RPC ports to the public internet.
 
 ## Ongoing development 💻
 
-Pepecoin Core is an open source and community driven software. The development
-process is open and publicly visible; anyone can see, discuss and work on the
-software.
+Pepecoin Core is an open source and community driven software. The development process is open and publicly visible; anyone can see, discuss and work on the software.
 
 Main development resources:
 
-* [GitHub Projects](https://github.com/pepecoinppc/pepecoin/projects) is used to
-  follow planned and in-progress work for upcoming releases.
-* [GitHub Discussion](https://github.com/pepecoinppc/pepecoin/discussions) is used
-  to discuss features, planned and unplanned, related to both the development of
-  the Pepecoin Core software, the underlying protocols and the PEPE asset.
-* [PepecoinDev subreddit](https://www.reddit.com/r/pepecoindev/)
+* [GitHub Projects](https://github.com/pepecoinppc/pepecoin/projects) is used to follow planned and in-progress work for upcoming releases.
+* [GitHub Discussion](https://github.com/pepecoinppc/pepecoin/discussions) is used to discuss features, planned and unplanned, related to both the development of the Pepecoin Core software, the underlying protocols and the PEP asset.
+* [PepecoinDev subreddit](https://www.reddit.com/r/pepecoindev)
 
 ### Version strategy
 Version numbers are following ```major.minor.patch``` semantics.
@@ -72,30 +63,21 @@ There are 3 types of branches in this repository:
 - **maintenance:** Stable, contains the latest version of previous releases, which are still under active maintenance. Format: ```<version>-maint```
 - **development:** Unstable, contains new code for planned releases. Format: ```<version>-dev```
 
-*Master and maintenance branches are exclusively mutable by release. Planned*
-*releases will always have a development branch and pull requests should be*
-*submitted against those. Maintenance branches are there for **bug fixes only,***
-*please submit new features against the development branch with the highest version.*
+*Master and maintenance branches are exclusively mutable by release. Planned releases will always have a development branch and pull requests should be submitted against those. Maintenance branches are there for **bug fixes only,** please submit new features against the development branch with the highest version.*
 
 ## Contributing 🤝
 
-If you find a bug or experience issues with this software, please report it
-using the [issue system](https://github.com/pepecoinppc/pepecoin/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
+If you find a bug or experience issues with this software, please report it using the [issue system](https://github.com/pepecoinppc/pepecoin/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D+).
 
-Please see [the contribution guide](CONTRIBUTING.md) to see how you can
-participate in the development of Pepecoin Core. There are often
-[topics seeking help](https://github.com/pepecoinppc/pepecoin/labels/help%20wanted)
-where your contributions will have high impact and get very appreciation.
+Please see [the contribution guide](CONTRIBUTING.md) to see how you can participate in the development of Pepecoin Core. There are often [topics seeking help](https://github.com/pepecoinppc/pepecoin/labels/help%20wanted) where your contributions will have high impact and get very appreciation.
 
 ## Communities 🐸
 
-You can join the communities on different social media.
-To see what's going on, meet people & discuss, find the latest meme, learn
-about Pepecoin, give or ask for help, to share your project.
+You can join the communities on different social media. To see what's going on, meet people & discuss, find the latest meme, learn about Pepecoin, give or ask for help, to share your project.
 
 Here are some places to visit:
 
-* [r/Pepecoin](https://www.reddit.com/r/pepecoin/)
+* [Reddit](https://www.reddit.com/r/pepecoin)
 * [Discord](https://pepecoin.org/discord)
 * [Telegram](https://t.me/PepecoinGroup)
 * [Twitter/X](https://twitter.com/PepecoinNetwork)
@@ -105,6 +87,4 @@ Here are some places to visit:
 Do you have a question regarding Pepecoin? An answer is perhaps already in the [FAQ](doc/FAQ.md) or the [Q&A section](https://github.com/pepecoinppc/pepecoin/discussions/categories/q-a) of the discussion board!
 
 ## License ⚖️
-Pepecoin Core is released under the terms of the MIT license. See
-[COPYING](COPYING) for more information or see
-[opensource.org](https://opensource.org/licenses/MIT)
+Pepecoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more information or see [opensource.org](https://opensource.org/licenses/MIT)
